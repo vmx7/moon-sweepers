@@ -11,6 +11,7 @@
 #include "components/engine/classes/moon_night_vision/moon_night_vision.hpp"
 #include "components/engine/classes/moon_player_visual/moon_player_visual.hpp"
 #include "components/engine/classes/moon_run_over/moon_run_over.hpp"
+#include "components/engine/classes/moon_steam_lobby/moon_steam_lobby.hpp"
 #include "components/engine/classes/moon_walker/moon_walker.hpp"
 #include "components/engine/classes/moon_world/moon_world.hpp"
 #include "components/engine/il2cpp.hpp"
@@ -56,6 +57,9 @@ namespace engine
         moon_crew_session::resolve();
         moon_player_visual::resolve();
         moon_night_vision::resolve();
+        moon_steam_lobby::resolve();
+
+        moon_dev_tools::patch_enabled_true();
 
         ready_.store(true, std::memory_order_release);
         lg::info("engine", "engine ready game=0x{:X} unity=0x{:X}",

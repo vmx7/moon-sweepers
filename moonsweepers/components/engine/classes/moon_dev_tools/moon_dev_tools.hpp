@@ -10,4 +10,6 @@ namespace moon_dev_tools
     void set_noclip(bool v) noexcept;
 
     [[nodiscard]] bool enabled() noexcept;
+
+    bool patch_enabled_true() noexcept;
 }

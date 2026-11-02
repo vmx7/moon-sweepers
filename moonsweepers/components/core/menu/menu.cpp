@@ -1,6 +1,7 @@
 #include "menu.hpp"
 
 #include "components/core/features/brush_tuner/brush_tuner.hpp"
+#include "components/core/features/dev_tools/dev_tools.hpp"
 #include "components/core/features/flag_esp/flag_esp.hpp"
 #include "components/core/features/fly/fly.hpp"
 #include "components/core/features/gravity_boots/gravity_boots.hpp"
@@ -38,6 +39,7 @@ namespace menu
         features::gravity_boots::draw_menu();
         features::brush_tuner::draw_menu();
         features::flag_esp::draw_menu();
+        features::dev_tools::draw_menu();
 
         ImGui::End();
     }

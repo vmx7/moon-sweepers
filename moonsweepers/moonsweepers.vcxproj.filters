@@ -19,6 +19,9 @@
     <Filter Include="components\core\features">
       <UniqueIdentifier>{10000006-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
+    <Filter Include="components\core\features\dev_tools">
+      <UniqueIdentifier>{30000001-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
     <Filter Include="components\core\features\brush_tuner">
       <UniqueIdentifier>{10000007-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
@@ -120,6 +123,9 @@
     </ClCompile>
     <ClCompile Include="components\core\menu\menu.cpp">
       <Filter>components\core\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\dev_tools\dev_tools.cpp">
+      <Filter>components\core\features\dev_tools</Filter>
     </ClCompile>
     <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp">
       <Filter>components\core\features\brush_tuner</Filter>
@@ -227,6 +233,9 @@
     </ClInclude>
     <ClInclude Include="components\core\menu\menu.hpp">
       <Filter>components\core\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\dev_tools\dev_tools.hpp">
+      <Filter>components\core\features\dev_tools</Filter>
     </ClInclude>
     <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp">
       <Filter>components\core\features\brush_tuner</Filter>

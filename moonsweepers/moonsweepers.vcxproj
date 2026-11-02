@@ -86,6 +86,7 @@
     <ClCompile Include="components\core\overlay\overlay.cpp" />
     <ClCompile Include="components\core\menu\menu.cpp" />
     <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp" />
+    <ClCompile Include="components\core\features\dev_tools\dev_tools.cpp" />
     <ClCompile Include="components\core\features\flag_esp\flag_esp.cpp" />
     <ClCompile Include="components\core\features\fly\fly.cpp" />
     <ClCompile Include="components\core\features\gravity_boots\gravity_boots.cpp" />
@@ -102,6 +103,7 @@
     <ClCompile Include="components\engine\classes\moon_crew_session\moon_crew_session.cpp" />
     <ClCompile Include="components\engine\classes\moon_player_visual\moon_player_visual.cpp" />
     <ClCompile Include="components\engine\classes\moon_run_over\moon_run_over.cpp" />
+    <ClCompile Include="components\engine\classes\moon_steam_lobby\moon_steam_lobby.cpp" />
     <ClCompile Include="components\engine\classes\moon_walker\moon_walker.cpp" />
     <ClCompile Include="components\engine\classes\moon_world\moon_world.cpp" />
     <ClCompile Include="utilities\utilities.cpp" />
@@ -137,6 +139,7 @@
     <ClInclude Include="components\core\overlay\overlay.hpp" />
     <ClInclude Include="components\core\menu\menu.hpp" />
     <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp" />
+    <ClInclude Include="components\core\features\dev_tools\dev_tools.hpp" />
     <ClInclude Include="components\core\features\flag_esp\flag_esp.hpp" />
     <ClInclude Include="components\core\features\fly\fly.hpp" />
     <ClInclude Include="components\core\features\gravity_boots\gravity_boots.hpp" />
@@ -153,6 +156,7 @@
     <ClInclude Include="components\engine\classes\moon_crew_session\moon_crew_session.hpp" />
     <ClInclude Include="components\engine\classes\moon_player_visual\moon_player_visual.hpp" />
     <ClInclude Include="components\engine\classes\moon_run_over\moon_run_over.hpp" />
+    <ClInclude Include="components\engine\classes\moon_steam_lobby\moon_steam_lobby.hpp" />
     <ClInclude Include="components\engine\classes\moon_walker\moon_walker.hpp" />
     <ClInclude Include="components\engine\classes\moon_world\moon_world.hpp" />
     <ClInclude Include="components\engine\enum\landmark_kind\landmark_kind.hpp" />

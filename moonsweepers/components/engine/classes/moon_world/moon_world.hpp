@@ -23,4 +23,22 @@ namespace moon_world
     bool crew_raise_landmark(il2cpp::il2cpp_object* world_instance,
                              il2cpp::il2cpp_object* player_string,
                              std::int32_t          index) noexcept;
+
+    void dev_add_money(il2cpp::il2cpp_object* world_instance,
+                       il2cpp::il2cpp_object* player_string,
+                       double                 dollars) noexcept;
+
+    void dev_set_carried_dust(il2cpp::il2cpp_object* world_instance,
+                              il2cpp::il2cpp_object* player_string,
+                              double                 kilograms) noexcept;
+
+    std::int32_t dev_complete_regions(il2cpp::il2cpp_object* world_instance,
+                                      const sdk::vector3&    point,
+                                      std::int32_t           rings) noexcept;
+
+    std::int32_t dev_finish_all_but_one(il2cpp::il2cpp_object* world_instance,
+                                        const sdk::vector3&    point,
+                                        sdk::vector3&          last_out) noexcept;
+
+    bool dev_reset_dust(il2cpp::il2cpp_object* world_instance) noexcept;
 }

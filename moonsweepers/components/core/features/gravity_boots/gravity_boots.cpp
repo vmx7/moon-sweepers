@@ -2,7 +2,6 @@
 
 #include "components/engine/classes/moon_walker/moon_walker.hpp"
 #include "components/engine/engine.hpp"
-#include "components/engine/il2cpp.hpp"
 
 #include "imgui/imgui.h"
 
@@ -10,29 +9,28 @@ namespace features::gravity_boots
 {
     namespace
     {
-        bool last_state_ = false;
+        bool last_on_ = false;
     }
 
     void tick() noexcept
     {
         auto* walker = engine::local_walker();
-        if (walker == nullptr || !moon_walker::ready())
+        if (walker == nullptr)
         {
+            last_on_ = false;
+
             return;
         }
 
-        if (enabled == last_state_)
+        if (enabled)
         {
-            return;
+            moon_walker::set_gravity_boots_field(walker, true);
+            last_on_ = true;
         }
-
-        if (auto* m = moon_walker::method_set_gravity_boots())
+        else if (last_on_)
         {
-            bool v = enabled;
-            void* args[] = { &v };
-            il2cpp::il2cpp_object* exc = nullptr;
-            (void)il2cpp::runtime_invoke(m, walker, args, &exc);
-            last_state_ = enabled;
+            moon_walker::set_gravity_boots_field(walker, false);
+            last_on_ = false;
         }
     }
 

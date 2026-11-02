@@ -1,8 +1,8 @@
 #include "night_vision.hpp"
 
+#include "components/engine/classes/moon_night_vision/moon_night_vision.hpp"
 #include "components/engine/classes/moon_walker/moon_walker.hpp"
 #include "components/engine/engine.hpp"
-#include "components/engine/il2cpp.hpp"
 
 #include "imgui/imgui.h"
 
@@ -10,29 +10,36 @@ namespace features::night_vision
 {
     namespace
     {
-        bool last_state_ = false;
+        bool last_on_ = false;
     }
 
     void tick() noexcept
     {
         auto* walker = engine::local_walker();
-        if (walker == nullptr || !moon_walker::ready())
+        if (walker == nullptr)
         {
+            last_on_ = false;
+
             return;
         }
 
-        if (enabled == last_state_)
+        if (enabled)
         {
-            return;
+            moon_walker::set_night_vision_field(walker, true);
+            if (moon_night_vision::ready())
+            {
+                moon_night_vision::set_amount(intensity);
+            }
+            last_on_ = true;
         }
-
-        if (auto* m = moon_walker::method_set_night_vision())
+        else if (last_on_)
         {
-            bool v = enabled;
-            void* args[] = { &v };
-            il2cpp::il2cpp_object* exc = nullptr;
-            (void)il2cpp::runtime_invoke(m, walker, args, &exc);
-            last_state_ = enabled;
+            moon_walker::set_night_vision_field(walker, false);
+            if (moon_night_vision::ready())
+            {
+                moon_night_vision::set_amount(0.0f);
+            }
+            last_on_ = false;
         }
     }
 
@@ -40,7 +47,8 @@ namespace features::night_vision
     {
         if (ImGui::CollapsingHeader("Night vision"))
         {
-            ImGui::Checkbox("Enable##nv", &enabled);
+            ImGui::Checkbox("Enable##nv",      &enabled);
+            ImGui::SliderFloat("Intensity",    &intensity, 0.1f, 3.0f, "%.2f");
         }
     }
 }

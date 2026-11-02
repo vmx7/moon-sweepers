@@ -21,4 +21,7 @@ namespace moon_walker
     [[nodiscard]] il2cpp::il2cpp_object* world(il2cpp::il2cpp_object* walker) noexcept;
 
     void teleport(il2cpp::il2cpp_object* walker, float x, float y, float z) noexcept;
+
+    void set_night_vision_field(il2cpp::il2cpp_object* walker, bool on) noexcept;
+    void set_gravity_boots_field(il2cpp::il2cpp_object* walker, bool on) noexcept;
 }

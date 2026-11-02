@@ -19,6 +19,10 @@ namespace moon_walker
         il2cpp::il2cpp_field_info*  field_world_             = nullptr;
         std::int32_t                offset_world_            = -1;
         il2cpp::il2cpp_method_info* teleport_                = nullptr;
+        il2cpp::il2cpp_field_info*  field_nv_on_             = nullptr;
+        std::int32_t                offset_nv_on_            = -1;
+        il2cpp::il2cpp_field_info*  field_gb_on_             = nullptr;
+        std::int32_t                offset_gb_on_            = -1;
     }
 
     void resolve() noexcept
@@ -49,6 +53,16 @@ namespace moon_walker
             offset_world_ = il2cpp::field_get_offset(field_world_);
         }
         teleport_                 = il2cpp::class_get_method_from_name(class_, "Teleport", 2);
+        field_nv_on_              = il2cpp::class_get_field_from_name(class_, "<NightVisionOn>k__BackingField");
+        if (field_nv_on_ != nullptr)
+        {
+            offset_nv_on_ = il2cpp::field_get_offset(field_nv_on_);
+        }
+        field_gb_on_              = il2cpp::class_get_field_from_name(class_, "<GravityBootsOn>k__BackingField");
+        if (field_gb_on_ != nullptr)
+        {
+            offset_gb_on_ = il2cpp::field_get_offset(field_gb_on_);
+        }
 
         lg::info("walker",
             "ready class=0x{:X} SetFlying=0x{:X} SetNightVision=0x{:X} viewCamera_off=0x{:X} world_off=0x{:X}",
@@ -106,5 +120,25 @@ namespace moon_walker
         void* args[]  = { pos, &refresh };
         il2cpp::il2cpp_object* exc = nullptr;
         (void)il2cpp::runtime_invoke(teleport_, walker, args, &exc);
+    }
+
+    void set_night_vision_field(il2cpp::il2cpp_object* walker, bool on) noexcept
+    {
+        if (walker == nullptr || offset_nv_on_ < 0)
+        {
+            return;
+        }
+        auto* dst = reinterpret_cast<std::uint8_t*>(walker) + offset_nv_on_;
+        *dst = on ? 1 : 0;
+    }
+
+    void set_gravity_boots_field(il2cpp::il2cpp_object* walker, bool on) noexcept
+    {
+        if (walker == nullptr || offset_gb_on_ < 0)
+        {
+            return;
+        }
+        auto* dst = reinterpret_cast<std::uint8_t*>(walker) + offset_gb_on_;
+        *dst = on ? 1 : 0;
     }
 }

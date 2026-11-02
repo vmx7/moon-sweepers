@@ -8,6 +8,7 @@
 #include "components/engine/classes/moon_dev_tools/moon_dev_tools.hpp"
 #include "components/engine/classes/moon_dust_hand/moon_dust_hand.hpp"
 #include "components/engine/classes/moon_landmark/moon_landmark.hpp"
+#include "components/engine/classes/moon_night_vision/moon_night_vision.hpp"
 #include "components/engine/classes/moon_player_visual/moon_player_visual.hpp"
 #include "components/engine/classes/moon_run_over/moon_run_over.hpp"
 #include "components/engine/classes/moon_walker/moon_walker.hpp"
@@ -54,6 +55,7 @@ namespace engine
         moon_landmark::resolve();
         moon_crew_session::resolve();
         moon_player_visual::resolve();
+        moon_night_vision::resolve();
 
         ready_.store(true, std::memory_order_release);
         lg::info("engine", "engine ready game=0x{:X} unity=0x{:X}",

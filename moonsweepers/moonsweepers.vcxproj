@@ -100,6 +100,7 @@
     <ClCompile Include="components\engine\classes\moon_dev_tools\moon_dev_tools.cpp" />
     <ClCompile Include="components\engine\classes\moon_dust_hand\moon_dust_hand.cpp" />
     <ClCompile Include="components\engine\classes\moon_landmark\moon_landmark.cpp" />
+    <ClCompile Include="components\engine\classes\moon_night_vision\moon_night_vision.cpp" />
     <ClCompile Include="components\engine\classes\moon_crew_session\moon_crew_session.cpp" />
     <ClCompile Include="components\engine\classes\moon_player_visual\moon_player_visual.cpp" />
     <ClCompile Include="components\engine\classes\moon_run_over\moon_run_over.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="components\engine\classes\moon_dev_tools\moon_dev_tools.hpp" />
     <ClInclude Include="components\engine\classes\moon_dust_hand\moon_dust_hand.hpp" />
     <ClInclude Include="components\engine\classes\moon_landmark\moon_landmark.hpp" />
+    <ClInclude Include="components\engine\classes\moon_night_vision\moon_night_vision.hpp" />
     <ClInclude Include="components\engine\classes\moon_crew_session\moon_crew_session.hpp" />
     <ClInclude Include="components\engine\classes\moon_player_visual\moon_player_visual.hpp" />
     <ClInclude Include="components\engine\classes\moon_run_over\moon_run_over.hpp" />

@@ -24,4 +24,9 @@ namespace moon_walker
 
     void set_night_vision_field(il2cpp::il2cpp_object* walker, bool on) noexcept;
     void set_gravity_boots_field(il2cpp::il2cpp_object* walker, bool on) noexcept;
+
+    void call_unstick(il2cpp::il2cpp_object* walker) noexcept;
+
+    void set_climb_speed(il2cpp::il2cpp_object* walker, float v) noexcept;
+    void set_earth_gravity(il2cpp::il2cpp_object* walker, float v) noexcept;
 }

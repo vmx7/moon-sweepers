@@ -10,6 +10,7 @@
 #include "components/engine/classes/moon_landmark/moon_landmark.hpp"
 #include "components/engine/classes/moon_night_vision/moon_night_vision.hpp"
 #include "components/engine/classes/moon_player_visual/moon_player_visual.hpp"
+#include "components/engine/classes/moon_remote_player/moon_remote_player.hpp"
 #include "components/engine/classes/moon_run_over/moon_run_over.hpp"
 #include "components/engine/classes/moon_steam_lobby/moon_steam_lobby.hpp"
 #include "components/engine/classes/moon_walker/moon_walker.hpp"
@@ -58,6 +59,7 @@ namespace engine
         moon_player_visual::resolve();
         moon_night_vision::resolve();
         moon_steam_lobby::resolve();
+        moon_remote_player::resolve();
 
         moon_dev_tools::patch_enabled_true();
 

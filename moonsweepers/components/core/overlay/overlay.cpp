@@ -144,6 +144,7 @@ namespace core::overlay
             core::request_unload();
         }
 
+        menu::tick_features();
         features::flag_esp::render();
 
         if (menu_open_.load(std::memory_order_acquire))

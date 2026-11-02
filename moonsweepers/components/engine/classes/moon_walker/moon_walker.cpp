@@ -23,6 +23,20 @@ namespace moon_walker
         std::int32_t                offset_nv_on_            = -1;
         il2cpp::il2cpp_field_info*  field_gb_on_             = nullptr;
         std::int32_t                offset_gb_on_            = -1;
+        il2cpp::il2cpp_field_info*  field_climb_speed_       = nullptr;
+        std::int32_t                offset_climb_speed_      = -1;
+        il2cpp::il2cpp_field_info*  field_earth_gravity_     = nullptr;
+        std::int32_t                offset_earth_gravity_    = -1;
+
+        void write_float_at(il2cpp::il2cpp_object* walker, std::int32_t off, float v) noexcept
+        {
+            if (walker == nullptr || off < 0)
+            {
+                return;
+            }
+            auto* dst = reinterpret_cast<std::uint8_t*>(walker) + off;
+            *reinterpret_cast<float*>(dst) = v;
+        }
     }
 
     void resolve() noexcept
@@ -63,6 +77,20 @@ namespace moon_walker
         {
             offset_gb_on_ = il2cpp::field_get_offset(field_gb_on_);
         }
+
+        const auto bind_float = [](const char* name,
+                                   il2cpp::il2cpp_field_info*& field,
+                                   std::int32_t&               off) noexcept
+        {
+            field = il2cpp::class_get_field_from_name(class_, name);
+            if (field != nullptr)
+            {
+                off = il2cpp::field_get_offset(field);
+            }
+        };
+
+        bind_float("ClimbSpeed",   field_climb_speed_,   offset_climb_speed_);
+        bind_float("EarthGravity", field_earth_gravity_, offset_earth_gravity_);
 
         lg::info("walker",
             "ready class=0x{:X} SetFlying=0x{:X} SetNightVision=0x{:X} viewCamera_off=0x{:X} world_off=0x{:X}",
@@ -141,4 +169,17 @@ namespace moon_walker
         auto* dst = reinterpret_cast<std::uint8_t*>(walker) + offset_gb_on_;
         *dst = on ? 1 : 0;
     }
+
+    void call_unstick(il2cpp::il2cpp_object* walker) noexcept
+    {
+        if (walker == nullptr || unstick_ == nullptr)
+        {
+            return;
+        }
+        il2cpp::il2cpp_object* exc = nullptr;
+        (void)il2cpp::runtime_invoke(unstick_, walker, nullptr, &exc);
+    }
+
+    void set_climb_speed(il2cpp::il2cpp_object* walker, float v) noexcept   { write_float_at(walker, offset_climb_speed_,   v); }
+    void set_earth_gravity(il2cpp::il2cpp_object* walker, float v) noexcept { write_float_at(walker, offset_earth_gravity_, v); }
 }

@@ -22,6 +22,15 @@
     <Filter Include="components\core\features\dev_tools">
       <UniqueIdentifier>{30000001-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
+    <Filter Include="components\core\features\qol">
+      <UniqueIdentifier>{30000003-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\teammate_tp">
+      <UniqueIdentifier>{30000004-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_remote_player">
+      <UniqueIdentifier>{30000005-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
     <Filter Include="components\core\features\brush_tuner">
       <UniqueIdentifier>{10000007-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
@@ -126,6 +135,15 @@
     </ClCompile>
     <ClCompile Include="components\core\features\dev_tools\dev_tools.cpp">
       <Filter>components\core\features\dev_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\qol\qol.cpp">
+      <Filter>components\core\features\qol</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\teammate_tp\teammate_tp.cpp">
+      <Filter>components\core\features\teammate_tp</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_remote_player\moon_remote_player.cpp">
+      <Filter>components\engine\classes\moon_remote_player</Filter>
     </ClCompile>
     <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp">
       <Filter>components\core\features\brush_tuner</Filter>
@@ -236,6 +254,15 @@
     </ClInclude>
     <ClInclude Include="components\core\features\dev_tools\dev_tools.hpp">
       <Filter>components\core\features\dev_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\qol\qol.hpp">
+      <Filter>components\core\features\qol</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\teammate_tp\teammate_tp.hpp">
+      <Filter>components\core\features\teammate_tp</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_remote_player\moon_remote_player.hpp">
+      <Filter>components\engine\classes\moon_remote_player</Filter>
     </ClInclude>
     <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp">
       <Filter>components\core\features\brush_tuner</Filter>

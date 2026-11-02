@@ -23,6 +23,8 @@ namespace il2cpp
         using fn_runtime_invoke             = il2cpp_object* (*)(const il2cpp_method_info*, void*, void**, il2cpp_object**);
         using fn_thread_attach              = void* (*)(il2cpp_domain*);
         using fn_thread_detach              = void  (*)(void*);
+        using fn_class_get_type             = const il2cpp_type* (*)(il2cpp_class*);
+        using fn_type_get_object            = il2cpp_object* (*)(const il2cpp_type*);
 
         fn_domain_get                 p_domain_get                 = nullptr;
         fn_domain_assembly_open       p_domain_assembly_open       = nullptr;
@@ -39,6 +41,8 @@ namespace il2cpp
         fn_runtime_invoke             p_runtime_invoke             = nullptr;
         fn_thread_attach              p_thread_attach              = nullptr;
         fn_thread_detach              p_thread_detach              = nullptr;
+        fn_class_get_type             p_class_get_type             = nullptr;
+        fn_type_get_object            p_type_get_object            = nullptr;
 
         il2cpp_domain*       domain_        = nullptr;
         const il2cpp_image*  assembly_csharp_image_ = nullptr;
@@ -71,6 +75,8 @@ namespace il2cpp
         BIND(runtime_invoke);
         BIND(thread_attach);
         BIND(thread_detach);
+        BIND(class_get_type);
+        BIND(type_get_object);
 
 #undef BIND
 
@@ -235,6 +241,26 @@ namespace il2cpp
     il2cpp_class* resolve(const char*, const char* ns, const char* name) noexcept
     {
         return class_from_name(assembly_csharp_image_, ns, name);
+    }
+
+    const il2cpp_type* class_get_type(il2cpp_class* k) noexcept
+    {
+        if (p_class_get_type == nullptr || k == nullptr)
+        {
+            return nullptr;
+        }
+
+        return p_class_get_type(k);
+    }
+
+    il2cpp_object* type_get_object(const il2cpp_type* t) noexcept
+    {
+        if (p_type_get_object == nullptr || t == nullptr)
+        {
+            return nullptr;
+        }
+
+        return p_type_get_object(t);
     }
 
     il2cpp_class* resolve_in(const char* assembly_dll, const char* ns, const char* name) noexcept

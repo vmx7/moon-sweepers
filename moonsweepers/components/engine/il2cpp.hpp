@@ -42,6 +42,9 @@ namespace il2cpp
 
     [[nodiscard]] il2cpp_class* resolve_in(const char* assembly_dll, const char* ns, const char* name) noexcept;
 
+    [[nodiscard]] const il2cpp_type* class_get_type(il2cpp_class* k) noexcept;
+    [[nodiscard]] il2cpp_object*     type_get_object(const il2cpp_type* t) noexcept;
+
     template <typename t>
     [[nodiscard]] inline t get_static(il2cpp_field_info* f) noexcept
     {

@@ -91,7 +91,9 @@
     <ClCompile Include="components\core\features\fly\fly.cpp" />
     <ClCompile Include="components\core\features\gravity_boots\gravity_boots.cpp" />
     <ClCompile Include="components\core\features\night_vision\night_vision.cpp" />
+    <ClCompile Include="components\core\features\qol\qol.cpp" />
     <ClCompile Include="components\core\features\speed\speed.cpp" />
+    <ClCompile Include="components\core\features\teammate_tp\teammate_tp.cpp" />
     <ClCompile Include="components\engine\engine.cpp" />
     <ClCompile Include="components\engine\il2cpp.cpp" />
     <ClCompile Include="components\engine\classes\camera\camera.cpp" />
@@ -102,6 +104,7 @@
     <ClCompile Include="components\engine\classes\moon_night_vision\moon_night_vision.cpp" />
     <ClCompile Include="components\engine\classes\moon_crew_session\moon_crew_session.cpp" />
     <ClCompile Include="components\engine\classes\moon_player_visual\moon_player_visual.cpp" />
+    <ClCompile Include="components\engine\classes\moon_remote_player\moon_remote_player.cpp" />
     <ClCompile Include="components\engine\classes\moon_run_over\moon_run_over.cpp" />
     <ClCompile Include="components\engine\classes\moon_steam_lobby\moon_steam_lobby.cpp" />
     <ClCompile Include="components\engine\classes\moon_walker\moon_walker.cpp" />
@@ -144,7 +147,9 @@
     <ClInclude Include="components\core\features\fly\fly.hpp" />
     <ClInclude Include="components\core\features\gravity_boots\gravity_boots.hpp" />
     <ClInclude Include="components\core\features\night_vision\night_vision.hpp" />
+    <ClInclude Include="components\core\features\qol\qol.hpp" />
     <ClInclude Include="components\core\features\speed\speed.hpp" />
+    <ClInclude Include="components\core\features\teammate_tp\teammate_tp.hpp" />
     <ClInclude Include="components\engine\engine.hpp" />
     <ClInclude Include="components\engine\il2cpp.hpp" />
     <ClInclude Include="components\engine\classes\camera\camera.hpp" />
@@ -155,6 +160,7 @@
     <ClInclude Include="components\engine\classes\moon_night_vision\moon_night_vision.hpp" />
     <ClInclude Include="components\engine\classes\moon_crew_session\moon_crew_session.hpp" />
     <ClInclude Include="components\engine\classes\moon_player_visual\moon_player_visual.hpp" />
+    <ClInclude Include="components\engine\classes\moon_remote_player\moon_remote_player.hpp" />
     <ClInclude Include="components\engine\classes\moon_run_over\moon_run_over.hpp" />
     <ClInclude Include="components\engine\classes\moon_steam_lobby\moon_steam_lobby.hpp" />
     <ClInclude Include="components\engine\classes\moon_walker\moon_walker.hpp" />

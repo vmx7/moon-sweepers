@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="components">
+      <UniqueIdentifier>{10000001-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core">
+      <UniqueIdentifier>{10000002-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\hook">
+      <UniqueIdentifier>{10000003-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\overlay">
+      <UniqueIdentifier>{10000004-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\menu">
+      <UniqueIdentifier>{10000005-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features">
+      <UniqueIdentifier>{10000006-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\brush_tuner">
+      <UniqueIdentifier>{10000007-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\dust_fill">
+      <UniqueIdentifier>{10000008-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\dust_locator">
+      <UniqueIdentifier>{10000009-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\flag_esp">
+      <UniqueIdentifier>{1000000A-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\fly">
+      <UniqueIdentifier>{2000000B-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\speed">
+      <UniqueIdentifier>{2000000C-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\night_vision">
+      <UniqueIdentifier>{2000000D-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\core\features\gravity_boots">
+      <UniqueIdentifier>{2000000E-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_run_over">
+      <UniqueIdentifier>{2000000F-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_world">
+      <UniqueIdentifier>{20000010-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine">
+      <UniqueIdentifier>{1000000C-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes">
+      <UniqueIdentifier>{1000000D-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\camera">
+      <UniqueIdentifier>{1000000E-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_brush">
+      <UniqueIdentifier>{1000000F-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_dev_tools">
+      <UniqueIdentifier>{10000010-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_dust_hand">
+      <UniqueIdentifier>{10000011-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_landmark">
+      <UniqueIdentifier>{10000012-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\classes\moon_walker">
+      <UniqueIdentifier>{10000013-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\enum">
+      <UniqueIdentifier>{10000014-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\enum\landmark_kind">
+      <UniqueIdentifier>{10000015-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\structures">
+      <UniqueIdentifier>{10000016-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\structures\matrix">
+      <UniqueIdentifier>{10000017-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\engine\structures\vector">
+      <UniqueIdentifier>{10000018-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{10000019-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities\log">
+      <UniqueIdentifier>{1000001A-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{1000001B-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui">
+      <UniqueIdentifier>{1000001C-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui\backends">
+      <UniqueIdentifier>{1000001D-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\MinHook">
+      <UniqueIdentifier>{1000001E-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\MinHook\hde">
+      <UniqueIdentifier>{1000001F-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\kiero">
+      <UniqueIdentifier>{10000020-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="components\core\core.cpp">
+      <Filter>components\core</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\hook\hook.cpp">
+      <Filter>components\core\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\overlay\overlay.cpp">
+      <Filter>components\core\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\menu\menu.cpp">
+      <Filter>components\core\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp">
+      <Filter>components\core\features\brush_tuner</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\dust_fill\dust_fill.cpp">
+      <Filter>components\core\features\dust_fill</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\dust_locator\dust_locator.cpp">
+      <Filter>components\core\features\dust_locator</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\flag_esp\flag_esp.cpp">
+      <Filter>components\core\features\flag_esp</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\fly\fly.cpp">
+      <Filter>components\core\features\fly</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\speed\speed.cpp">
+      <Filter>components\core\features\speed</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\night_vision\night_vision.cpp">
+      <Filter>components\core\features\night_vision</Filter>
+    </ClCompile>
+    <ClCompile Include="components\core\features\gravity_boots\gravity_boots.cpp">
+      <Filter>components\core\features\gravity_boots</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_world\moon_world.cpp">
+      <Filter>components\engine\classes\moon_world</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_run_over\moon_run_over.cpp">
+      <Filter>components\engine\classes\moon_run_over</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\engine.cpp">
+      <Filter>components\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\il2cpp.cpp">
+      <Filter>components\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\camera\camera.cpp">
+      <Filter>components\engine\classes\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_brush\moon_brush.cpp">
+      <Filter>components\engine\classes\moon_brush</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_dev_tools\moon_dev_tools.cpp">
+      <Filter>components\engine\classes\moon_dev_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_dust_hand\moon_dust_hand.cpp">
+      <Filter>components\engine\classes\moon_dust_hand</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_landmark\moon_landmark.cpp">
+      <Filter>components\engine\classes\moon_landmark</Filter>
+    </ClCompile>
+    <ClCompile Include="components\engine\classes\moon_walker\moon_walker.cpp">
+      <Filter>components\engine\classes\moon_walker</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\utilities.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\log\log.cpp">
+      <Filter>utilities\log</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\imgui.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\imgui_demo.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\imgui_draw.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\imgui_tables.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\imgui_widgets.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\kiero\kiero.cpp">
+      <Filter>vendor\kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\buffer.c">
+      <Filter>vendor\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hook.c">
+      <Filter>vendor\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\trampoline.c">
+      <Filter>vendor\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hde\hde32.c">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hde\hde64.c">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\core\core.hpp">
+      <Filter>components\core</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\hook\hook.hpp">
+      <Filter>components\core\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\overlay\overlay.hpp">
+      <Filter>components\core\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\menu\menu.hpp">
+      <Filter>components\core\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp">
+      <Filter>components\core\features\brush_tuner</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\dust_fill\dust_fill.hpp">
+      <Filter>components\core\features\dust_fill</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\dust_locator\dust_locator.hpp">
+      <Filter>components\core\features\dust_locator</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\flag_esp\flag_esp.hpp">
+      <Filter>components\core\features\flag_esp</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\fly\fly.hpp">
+      <Filter>components\core\features\fly</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\speed\speed.hpp">
+      <Filter>components\core\features\speed</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\night_vision\night_vision.hpp">
+      <Filter>components\core\features\night_vision</Filter>
+    </ClInclude>
+    <ClInclude Include="components\core\features\gravity_boots\gravity_boots.hpp">
+      <Filter>components\core\features\gravity_boots</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_world\moon_world.hpp">
+      <Filter>components\engine\classes\moon_world</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_run_over\moon_run_over.hpp">
+      <Filter>components\engine\classes\moon_run_over</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\engine.hpp">
+      <Filter>components\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\il2cpp.hpp">
+      <Filter>components\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\camera\camera.hpp">
+      <Filter>components\engine\classes\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_brush\moon_brush.hpp">
+      <Filter>components\engine\classes\moon_brush</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_dev_tools\moon_dev_tools.hpp">
+      <Filter>components\engine\classes\moon_dev_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_dust_hand\moon_dust_hand.hpp">
+      <Filter>components\engine\classes\moon_dust_hand</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_landmark\moon_landmark.hpp">
+      <Filter>components\engine\classes\moon_landmark</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\classes\moon_walker\moon_walker.hpp">
+      <Filter>components\engine\classes\moon_walker</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\enum\landmark_kind\landmark_kind.hpp">
+      <Filter>components\engine\enum\landmark_kind</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\structures\matrix\matrix.hpp">
+      <Filter>components\engine\structures\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\structures\vector\vector.hpp">
+      <Filter>components\engine\structures\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\utilities.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\log\log.hpp">
+      <Filter>utilities\log</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imconfig.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imgui.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imgui_internal.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imstb_rectpack.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imstb_textedit.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\imstb_truetype.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\backends\imgui_impl_dx11.h">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\imgui\backends\imgui_impl_win32.h">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\kiero\kiero.h">
+      <Filter>vendor\kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\include\MinHook.h">
+      <Filter>vendor\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\buffer.h">
+      <Filter>vendor\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\trampoline.h">
+      <Filter>vendor\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\hde\hde32.h">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\hde\hde64.h">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\hde\pstdint.h">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\hde\table32.h">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\include\MinHook\src\hde\table64.h">
+      <Filter>vendor\MinHook\hde</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

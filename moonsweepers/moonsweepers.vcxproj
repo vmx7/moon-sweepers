@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{09dc520c-df5e-42ba-a578-908cf94878db}</ProjectGuid>
+    <RootNamespace>moonsweepers</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MOONSWEEPERS_INTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vendor\include;$(ProjectDir)vendor\include\imgui;$(ProjectDir)vendor\include\MinHook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MOONSWEEPERS_INTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vendor\include;$(ProjectDir)vendor\include\imgui;$(ProjectDir)vendor\include\MinHook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="components\core\core.cpp" />
+    <ClCompile Include="components\core\hook\hook.cpp" />
+    <ClCompile Include="components\core\overlay\overlay.cpp" />
+    <ClCompile Include="components\core\menu\menu.cpp" />
+    <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp" />
+    <ClCompile Include="components\core\features\dust_fill\dust_fill.cpp" />
+    <ClCompile Include="components\core\features\dust_locator\dust_locator.cpp" />
+    <ClCompile Include="components\core\features\flag_esp\flag_esp.cpp" />
+    <ClCompile Include="components\core\features\fly\fly.cpp" />
+    <ClCompile Include="components\core\features\gravity_boots\gravity_boots.cpp" />
+    <ClCompile Include="components\core\features\night_vision\night_vision.cpp" />
+    <ClCompile Include="components\core\features\speed\speed.cpp" />
+    <ClCompile Include="components\engine\engine.cpp" />
+    <ClCompile Include="components\engine\il2cpp.cpp" />
+    <ClCompile Include="components\engine\classes\camera\camera.cpp" />
+    <ClCompile Include="components\engine\classes\moon_brush\moon_brush.cpp" />
+    <ClCompile Include="components\engine\classes\moon_dev_tools\moon_dev_tools.cpp" />
+    <ClCompile Include="components\engine\classes\moon_dust_hand\moon_dust_hand.cpp" />
+    <ClCompile Include="components\engine\classes\moon_landmark\moon_landmark.cpp" />
+    <ClCompile Include="components\engine\classes\moon_crew_session\moon_crew_session.cpp" />
+    <ClCompile Include="components\engine\classes\moon_player_visual\moon_player_visual.cpp" />
+    <ClCompile Include="components\engine\classes\moon_run_over\moon_run_over.cpp" />
+    <ClCompile Include="components\engine\classes\moon_walker\moon_walker.cpp" />
+    <ClCompile Include="components\engine\classes\moon_world\moon_world.cpp" />
+    <ClCompile Include="utilities\utilities.cpp" />
+    <ClCompile Include="utilities\log\log.cpp" />
+    <ClCompile Include="vendor\include\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\include\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="vendor\include\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="vendor\include\imgui\backends\imgui_impl_dx12.cpp" />
+    <ClCompile Include="vendor\include\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="vendor\include\kiero\kiero.cpp" />
+    <ClCompile Include="vendor\include\MinHook\src\buffer.c">
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hook.c">
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\trampoline.c">
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hde\hde32.c">
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="vendor\include\MinHook\src\hde\hde64.c">
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\core\core.hpp" />
+    <ClInclude Include="components\core\hook\hook.hpp" />
+    <ClInclude Include="components\core\overlay\overlay.hpp" />
+    <ClInclude Include="components\core\menu\menu.hpp" />
+    <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp" />
+    <ClInclude Include="components\core\features\dust_fill\dust_fill.hpp" />
+    <ClInclude Include="components\core\features\dust_locator\dust_locator.hpp" />
+    <ClInclude Include="components\core\features\flag_esp\flag_esp.hpp" />
+    <ClInclude Include="components\core\features\fly\fly.hpp" />
+    <ClInclude Include="components\core\features\gravity_boots\gravity_boots.hpp" />
+    <ClInclude Include="components\core\features\night_vision\night_vision.hpp" />
+    <ClInclude Include="components\core\features\speed\speed.hpp" />
+    <ClInclude Include="components\engine\engine.hpp" />
+    <ClInclude Include="components\engine\il2cpp.hpp" />
+    <ClInclude Include="components\engine\classes\camera\camera.hpp" />
+    <ClInclude Include="components\engine\classes\moon_brush\moon_brush.hpp" />
+    <ClInclude Include="components\engine\classes\moon_dev_tools\moon_dev_tools.hpp" />
+    <ClInclude Include="components\engine\classes\moon_dust_hand\moon_dust_hand.hpp" />
+    <ClInclude Include="components\engine\classes\moon_landmark\moon_landmark.hpp" />
+    <ClInclude Include="components\engine\classes\moon_crew_session\moon_crew_session.hpp" />
+    <ClInclude Include="components\engine\classes\moon_player_visual\moon_player_visual.hpp" />
+    <ClInclude Include="components\engine\classes\moon_run_over\moon_run_over.hpp" />
+    <ClInclude Include="components\engine\classes\moon_walker\moon_walker.hpp" />
+    <ClInclude Include="components\engine\classes\moon_world\moon_world.hpp" />
+    <ClInclude Include="components\engine\enum\landmark_kind\landmark_kind.hpp" />
+    <ClInclude Include="components\engine\structures\matrix\matrix.hpp" />
+    <ClInclude Include="components\engine\structures\vector\vector.hpp" />
+    <ClInclude Include="utilities\utilities.hpp" />
+    <ClInclude Include="utilities\log\log.hpp" />
+    <ClInclude Include="vendor\include\imgui\imconfig.h" />
+    <ClInclude Include="vendor\include\imgui\imgui.h" />
+    <ClInclude Include="vendor\include\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendor\include\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendor\include\imgui\imstb_truetype.h" />
+    <ClInclude Include="vendor\include\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="vendor\include\imgui\backends\imgui_impl_dx12.h" />
+    <ClInclude Include="vendor\include\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="vendor\include\kiero\kiero.h" />
+    <ClInclude Include="vendor\include\MinHook\include\MinHook.h" />
+    <ClInclude Include="vendor\include\MinHook\src\buffer.h" />
+    <ClInclude Include="vendor\include\MinHook\src\trampoline.h" />
+    <ClInclude Include="vendor\include\MinHook\src\hde\hde32.h" />
+    <ClInclude Include="vendor\include\MinHook\src\hde\hde64.h" />
+    <ClInclude Include="vendor\include\MinHook\src\hde\pstdint.h" />
+    <ClInclude Include="vendor\include\MinHook\src\hde\table32.h" />
+    <ClInclude Include="vendor\include\MinHook\src\hde\table64.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

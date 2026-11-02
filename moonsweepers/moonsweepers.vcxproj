@@ -86,8 +86,6 @@
     <ClCompile Include="components\core\overlay\overlay.cpp" />
     <ClCompile Include="components\core\menu\menu.cpp" />
     <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp" />
-    <ClCompile Include="components\core\features\dust_fill\dust_fill.cpp" />
-    <ClCompile Include="components\core\features\dust_locator\dust_locator.cpp" />
     <ClCompile Include="components\core\features\flag_esp\flag_esp.cpp" />
     <ClCompile Include="components\core\features\fly\fly.cpp" />
     <ClCompile Include="components\core\features\gravity_boots\gravity_boots.cpp" />
@@ -139,8 +137,6 @@
     <ClInclude Include="components\core\overlay\overlay.hpp" />
     <ClInclude Include="components\core\menu\menu.hpp" />
     <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp" />
-    <ClInclude Include="components\core\features\dust_fill\dust_fill.hpp" />
-    <ClInclude Include="components\core\features\dust_locator\dust_locator.hpp" />
     <ClInclude Include="components\core\features\flag_esp\flag_esp.hpp" />
     <ClInclude Include="components\core\features\fly\fly.hpp" />
     <ClInclude Include="components\core\features\gravity_boots\gravity_boots.hpp" />

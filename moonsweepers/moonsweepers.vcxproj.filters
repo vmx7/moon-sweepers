@@ -22,12 +22,6 @@
     <Filter Include="components\core\features\brush_tuner">
       <UniqueIdentifier>{10000007-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
-    <Filter Include="components\core\features\dust_fill">
-      <UniqueIdentifier>{10000008-0000-0000-0000-000000000000}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="components\core\features\dust_locator">
-      <UniqueIdentifier>{10000009-0000-0000-0000-000000000000}</UniqueIdentifier>
-    </Filter>
     <Filter Include="components\core\features\flag_esp">
       <UniqueIdentifier>{1000000A-0000-0000-0000-000000000000}</UniqueIdentifier>
     </Filter>
@@ -129,12 +123,6 @@
     </ClCompile>
     <ClCompile Include="components\core\features\brush_tuner\brush_tuner.cpp">
       <Filter>components\core\features\brush_tuner</Filter>
-    </ClCompile>
-    <ClCompile Include="components\core\features\dust_fill\dust_fill.cpp">
-      <Filter>components\core\features\dust_fill</Filter>
-    </ClCompile>
-    <ClCompile Include="components\core\features\dust_locator\dust_locator.cpp">
-      <Filter>components\core\features\dust_locator</Filter>
     </ClCompile>
     <ClCompile Include="components\core\features\flag_esp\flag_esp.cpp">
       <Filter>components\core\features\flag_esp</Filter>
@@ -242,12 +230,6 @@
     </ClInclude>
     <ClInclude Include="components\core\features\brush_tuner\brush_tuner.hpp">
       <Filter>components\core\features\brush_tuner</Filter>
-    </ClInclude>
-    <ClInclude Include="components\core\features\dust_fill\dust_fill.hpp">
-      <Filter>components\core\features\dust_fill</Filter>
-    </ClInclude>
-    <ClInclude Include="components\core\features\dust_locator\dust_locator.hpp">
-      <Filter>components\core\features\dust_locator</Filter>
     </ClInclude>
     <ClInclude Include="components\core\features\flag_esp\flag_esp.hpp">
       <Filter>components\core\features\flag_esp</Filter>
